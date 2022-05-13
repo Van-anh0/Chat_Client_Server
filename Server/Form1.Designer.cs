@@ -29,13 +29,14 @@ namespace Server
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             this.lsvMessage = new System.Windows.Forms.ListView();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.txbMessage = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.SuspendLayout();
             // 
             // lsvMessage
@@ -88,6 +89,7 @@ namespace Server
             this.txbMessage.SelectedText = "";
             this.txbMessage.Size = new System.Drawing.Size(333, 36);
             this.txbMessage.TabIndex = 1;
+            this.txbMessage.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // guna2HtmlLabel1
             // 

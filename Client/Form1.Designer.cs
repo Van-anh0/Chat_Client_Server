@@ -89,6 +89,7 @@ namespace Client
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(333, 36);
             this.guna2TextBox1.TabIndex = 8;
+            this.guna2TextBox1.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // guna2Button1
             // 
