@@ -25,10 +25,10 @@ namespace Client
 		
 		}
 
-		private void btnSend_Click(object sender, EventArgs e)
+		private void guna2Button1_Click(object sender, EventArgs e)
 		{
 			Send();
-			AddMessage(txbMessage.Text);
+			AddMessage(guna2TextBox1.Text);
 		}
 
 		IPEndPoint IP;
@@ -59,8 +59,8 @@ namespace Client
 
 		void Send()
 		{
-			if(txbMessage.Text != string.Empty)
-			client.Send(Serialize(txbMessage.Text));
+			if(guna2TextBox1.Text != string.Empty)
+			client.Send(Serialize(guna2TextBox1.Text));
 		}
 
 		void Receive()
@@ -87,7 +87,7 @@ namespace Client
 		void AddMessage(string s)
 		{
 			lsvMessage.Items.Add(new ListViewItem(){ Text = s});
-			txbMessage.Clear();
+			guna2TextBox1.Clear();
 
 		}
 		//Phân mảnh
