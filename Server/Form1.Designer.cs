@@ -29,14 +29,13 @@ namespace Server
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.components = new System.ComponentModel.Container();
             this.lsvMessage = new System.Windows.Forms.ListView();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.txbMessage = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm();
             this.SuspendLayout();
             // 
             // lsvMessage
@@ -70,7 +69,8 @@ namespace Server
             // 
             // txbMessage
             // 
-            this.txbMessage.BorderRadius = 18;
+            this.txbMessage.AutoRoundedCorners = true;
+            this.txbMessage.BorderRadius = 17;
             this.txbMessage.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbMessage.DefaultText = "";
             this.txbMessage.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -126,6 +126,7 @@ namespace Server
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.ResizeForm = false;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // ServerForm
             // 
